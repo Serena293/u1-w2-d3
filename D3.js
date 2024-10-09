@@ -105,7 +105,7 @@ const starWarsCharacters = [
   Crea una variabile chiamata "charactersNames" e assegnale un array vuoto
 */
 
-let charactersNames = [];
+const charactersNames = [];
 
 /* ESERCIZIO 2
   Utilizzando un ciclo for, cicla l'array "starWarsCharacters".
@@ -230,10 +230,10 @@ console.log(starWarsCharacters);
 for (let i = 0; i < femaleCharacters.length; i++)
   for (let j = 0; j < charactersNames.length; j++) {
     if (charactersNames[j] === femaleCharacters[i].name) {
-      delete charactersNames[j];
+      charactersNames.splice(j, 1) 
     }
   }
-console.log(charactersNames);
+console.log('Esercizio 9', charactersNames);
 
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
